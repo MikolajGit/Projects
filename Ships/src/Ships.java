@@ -8,7 +8,7 @@ public class Ships {
         Playar playar2 = new Playar();
 
         ShipVariables field = new ShipVariables();
-
+/*
         field.setShips(1,1);
         System.out.println(field.getShips(1,1));
         System.out.println(field.getShips(1,2));
@@ -19,8 +19,9 @@ public class Ships {
         playar2.setName(data.next());
 
         System.out.println(playar1.getName());
-        System.out.println(playar2.getName());
+        System.out.println(playar2.getName());*/
 
-
+        field.setVarX("a");
+        System.out.println(field.getVarX());
     }
 }
