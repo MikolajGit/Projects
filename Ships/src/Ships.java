@@ -16,6 +16,7 @@ public class Ships {
         playar2.setName(data.next());
 
         System.out.println("Let's get started!");
+
         System.out.println("Player: " + playar1.getName());
         System.out.print("Enter first field: ");
         fieldsPlayer1.setShip1(data.next());
@@ -28,11 +29,12 @@ public class Ships {
         System.out.print("Enter fifth field: ");
         fieldsPlayer1.setShip5(data.next());
 
-        System.out.println(fieldsPlayer1.getShip1());
-        System.out.println(fieldsPlayer1.getShip2());
-        System.out.println(fieldsPlayer1.getShip3());
-        System.out.println(fieldsPlayer1.getShip4());
-        System.out.println(fieldsPlayer1.getShip5());
+        while (true){
+            System.out.println("Player: " + playar1.getName());
+
+            System.out.println("Player: " + playar2.getName());
+            break;
+        }
 
 
     }
