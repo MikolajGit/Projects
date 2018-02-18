@@ -4,8 +4,12 @@ public class Ships {
     public static void main(String[] args) {
         Scanner data = new Scanner(System.in);
 
+        String position;
+
         Playar playar1 = new Playar();
         Playar playar2 = new Playar();
+
+        CompareFields compareFields = new CompareFields();
 
         PlayerFields fieldsPlayer1 = new PlayerFields();
         PlayerFields fieldsPlayer2 = new PlayerFields();
@@ -43,6 +47,10 @@ public class Ships {
 
         while (true){
             System.out.println("Player: " + playar1.getName());
+
+            System.out.print("Enter position of the enemy ship's: ");
+            position = data.next();
+            compareFields.compareFields(position);
 
             System.out.println("Player: " + playar2.getName());
             break;
