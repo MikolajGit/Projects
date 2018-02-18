@@ -29,6 +29,18 @@ public class Ships {
         System.out.print("Enter fifth field: ");
         fieldsPlayer1.setShip5(data.next());
 
+        System.out.println("Player: " + playar2.getName());
+        System.out.print("Enter first field: ");
+        fieldsPlayer2.setShip1(data.next());
+        System.out.print("Enter second field: ");
+        fieldsPlayer2.setShip2(data.next());
+        System.out.print("Enter third field: ");
+        fieldsPlayer2.setShip3(data.next());
+        System.out.print("Enter fourth field: ");
+        fieldsPlayer2.setShip4(data.next());
+        System.out.print("Enter fifth field: ");
+        fieldsPlayer2.setShip5(data.next());
+
         while (true){
             System.out.println("Player: " + playar1.getName());
 
