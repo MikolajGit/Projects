@@ -9,7 +9,6 @@ public class Ships {
         Playar playar1 = new Playar();
         Playar playar2 = new Playar();
 
-        CompareFields compareFields = new CompareFields();
 
         PlayerFields fieldsPlayer1 = new PlayerFields();
         PlayerFields fieldsPlayer2 = new PlayerFields();
@@ -50,7 +49,12 @@ public class Ships {
 
             System.out.print("Enter position of the enemy ship's: ");
             position = data.next();
-            compareFields.compareFields(position);
+
+            if (position.equals(fieldsPlayer2.getShip1())||position.equals(fieldsPlayer2.getShip2())||position.equals(fieldsPlayer2.getShip3())||position.equals(fieldsPlayer2.getShip4())||position.equals(fieldsPlayer2.getShip5())){
+                System.out.println("Hit!");
+            }
+            else
+                System.out.println("Fail :(");
 
             System.out.println("Player: " + playar2.getName());
             break;
