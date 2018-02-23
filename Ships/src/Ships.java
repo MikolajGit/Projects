@@ -75,6 +75,18 @@ public class Ships {
             }
             else
                 System.out.println("Fail :(");
+
+            if (scorePlayer1.getScore()==5||scorePlayer2.getScore()==5){
+                System.out.println();
+                System.out.println("The End");
+
+                System.out.println();
+                System.out.println("Scores:");
+                System.out.println(playar1.getName() + " " + scorePlayer1.getScore());
+                System.out.println(playar2.getName() + " " + scorePlayer2.getScore());
+
+                System.exit(0);
+            }
         }
 
 
