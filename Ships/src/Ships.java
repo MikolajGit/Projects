@@ -20,8 +20,10 @@ public class Ships {
         System.out.print("Give the name of the second player: ");
         playar2.setName(data.next());
 
+        System.out.println();
         System.out.println("Let's get started!");
 
+        System.out.println();
         System.out.println("Player: " + playar1.getName());
         System.out.print("Enter first field: ");
         fieldsPlayer1.setShip1(data.next());
@@ -34,6 +36,7 @@ public class Ships {
         System.out.print("Enter fifth field: ");
         fieldsPlayer1.setShip5(data.next());
 
+        System.out.println();
         System.out.println("Player: " + playar2.getName());
         System.out.print("Enter first field: ");
         fieldsPlayer2.setShip1(data.next());
@@ -47,6 +50,7 @@ public class Ships {
         fieldsPlayer2.setShip5(data.next());
 
         while (true){
+            System.out.println();
             System.out.println("Player: " + playar1.getName() + " (score: " + scorePlayer1.getScore() + ")");
 
             System.out.print("Enter position of the enemy ship's: ");
@@ -59,10 +63,17 @@ public class Ships {
             else
                 System.out.println("Fail :(");
 
-            System.out.println(scorePlayer1.getScore());
+            System.out.println("Player: " + playar2.getName() + " (score: " + scorePlayer2.getScore() + ")");
 
-            System.out.println("Player: " + playar2.getName());
-            break;
+            System.out.print("Enter position of the enemy ship's: ");
+            position = data.next();
+
+            if (position.equals(fieldsPlayer1.getShip1())||position.equals(fieldsPlayer1.getShip2())||position.equals(fieldsPlayer1.getShip3())||position.equals(fieldsPlayer1.getShip4())||position.equals(fieldsPlayer1.getShip5())){
+                System.out.println("Hit!");
+                scorePlayer1.setScore();
+            }
+            else
+                System.out.println("Fail :(");
         }
 
 
