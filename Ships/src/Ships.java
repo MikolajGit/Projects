@@ -63,6 +63,7 @@ public class Ships {
             else
                 System.out.println("Fail :(");
 
+            System.out.println();
             System.out.println("Player: " + playar2.getName() + " (score: " + scorePlayer2.getScore() + ")");
 
             System.out.print("Enter position of the enemy ship's: ");
@@ -70,7 +71,7 @@ public class Ships {
 
             if (position.equals(fieldsPlayer1.getShip1())||position.equals(fieldsPlayer1.getShip2())||position.equals(fieldsPlayer1.getShip3())||position.equals(fieldsPlayer1.getShip4())||position.equals(fieldsPlayer1.getShip5())){
                 System.out.println("Hit!");
-                scorePlayer1.setScore();
+                scorePlayer2.setScore();
             }
             else
                 System.out.println("Fail :(");
