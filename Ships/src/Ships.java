@@ -1,7 +1,10 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Ships {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Scanner data = new Scanner(System.in);
 
         String position;
@@ -85,10 +88,19 @@ public class Ships {
                 System.out.println(playar1.getName() + " " + scorePlayer1.getScore());
                 System.out.println(playar2.getName() + " " + scorePlayer2.getScore());
 
-                System.exit(0);
+
+
+                break;
             }
         }
 
+        File scoresSave = new File("scoreSave.txt");
+        PrintWriter setScore = new PrintWriter(scoresSave);
+
+        setScore.println("Scores:");
+        setScore.println(playar1.getName() + ": " + scorePlayer1.getScore());
+        setScore.println(playar2.getName() + ": " + scorePlayer2.getScore());
+        setScore.close();
 
     }
 }
