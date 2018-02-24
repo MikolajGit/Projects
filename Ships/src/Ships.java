@@ -63,22 +63,23 @@ public class Ships {
                 System.out.println("Hit!");
                 fieldsPlayer2.setShip1(null);
                 scorePlayer1.setScore();
-            }
-            else if (position.equals(fieldsPlayer2.getShip2())){
+            }else if (position.equals(fieldsPlayer2.getShip2())){
                 System.out.println("Hit!");
-
+                fieldsPlayer2.setShip2(null);
                 scorePlayer1.setScore();
             }else if (position.equals(fieldsPlayer2.getShip3())){
                 System.out.println("Hit!");
+                fieldsPlayer2.setShip3(null);
                 scorePlayer1.setScore();
             }else if (position.equals(fieldsPlayer2.getShip4())){
                 System.out.println("Hit!");
+                fieldsPlayer2.setShip4(null);
                 scorePlayer1.setScore();
             }else if (position.equals(fieldsPlayer2.getShip5())){
                 System.out.println("Hit!");
+                fieldsPlayer2.setShip5(null);
                 scorePlayer1.setScore();
-            }
-            else
+            }else
                 System.out.println("Fail :(");
 
             System.out.println();
@@ -87,11 +88,27 @@ public class Ships {
             System.out.print("Enter position of the enemy ship's: ");
             position = data.next();
 
-            if (position.equals(fieldsPlayer1.getShip1())||position.equals(fieldsPlayer1.getShip2())||position.equals(fieldsPlayer1.getShip3())||position.equals(fieldsPlayer1.getShip4())||position.equals(fieldsPlayer1.getShip5())){
+            if (position.equals(fieldsPlayer1.getShip1())){
                 System.out.println("Hit!");
+                fieldsPlayer1.setShip1(null);
                 scorePlayer2.setScore();
-            }
-            else
+            }else if (position.equals(fieldsPlayer1.getShip2())){
+                System.out.println("Hit!");
+                fieldsPlayer1.setShip2(null);
+                scorePlayer2.setScore();
+            }else if (position.equals(fieldsPlayer1.getShip3())){
+                System.out.println("Hit!");
+                fieldsPlayer1.setShip3(null);
+                scorePlayer2.setScore();
+            }else if (position.equals(fieldsPlayer1.getShip4())){
+                System.out.println("Hit!");
+                fieldsPlayer1.setShip4(null);
+                scorePlayer2.setScore();
+            }else if (position.equals(fieldsPlayer1.getShip5())){
+                System.out.println("Hit!");
+                fieldsPlayer1.setShip5(null);
+                scorePlayer2.setScore();
+            }else
                 System.out.println("Fail :(");
 
             if (scorePlayer1.getScore()==5||scorePlayer2.getScore()==5){
